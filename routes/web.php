@@ -24,5 +24,5 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/excel', 'ExcelController@index')->name('excel');
 Route::get('/exportUsers', 'ExcelController@exportUsers')->name('exportUsers');
-Route::get('/downloadExcel/{type}', 'ExcelController@downloadExcel')->name('downloadExcel');;
-Route::post('/importExcel', 'ExcelController@importExcel')->name('importExcel');;
+Route::get('/downloadExcel/{type}', 'ExcelController@downloadExcel')->name('downloadExcel');
+Route::post('/importExcel', 'ExcelController@importExcel')->name('importExcel');
